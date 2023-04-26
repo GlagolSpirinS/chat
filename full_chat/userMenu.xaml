@@ -1,0 +1,125 @@
+﻿<Window x:Class="full_chat.userMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:full_chat"
+        mc:Ignorable="d"
+        Title="userMenu" Height="450" Width="800">
+    <Grid Background="#222831">
+        <Border
+            Height="350"
+            Width="530"
+            Background="#393E46"
+            Margin=" 220 0 0 40"
+            CornerRadius="5"
+            >
+        </Border>
+
+        <Border
+            Height="350"
+            Width="200"
+            Background="#393E46"
+            Margin=" 0 0 550 40"
+            CornerRadius="5"
+            >
+        </Border>
+
+        <Border
+            Height="40"
+            Width="425"
+            Margin=" 115 360 0 0"
+            Background="#393E46"
+            CornerRadius="5"
+            >
+        </Border>
+
+        <Border
+            Height="40"
+            Width="200"
+            Margin="0 360 550 0"
+            Background="#00ADB5" 
+            CornerRadius="5"
+            >
+        </Border>
+
+        <Border
+            Height="40"
+            Width="100"
+            Margin="650 360 0 0"
+            Background="#00ADB5" 
+            CornerRadius="5"
+            >
+        </Border>
+
+        <ListBox
+            x:Name="chat"
+            Height="350"
+            Width="530"
+            Foreground="#EEEEEE"
+            Margin=" 220 0 0 40"
+            BorderThickness="0"
+            d:ItemsSource="{d:SampleData ItemCount=5}"
+            Background="Transparent"
+            FontSize="20px"
+            Style="{StaticResource FontEbat}"
+            >
+        </ListBox>
+
+        <ListBox
+            x:Name="users"
+            Height="350"
+            Width="200"
+            Foreground="#EEEEEE"
+            Margin=" 0 0 550 40"
+            BorderThickness="0"
+            FontSize="20px"
+            Style="{StaticResource FontEbat}"
+            d:ItemsSource="{d:SampleData ItemCount=5}"
+            Background="Transparent"
+            >
+        </ListBox>
+
+        <TextBox
+            x:Name="text"
+            Height="40"
+            Width="425"
+            Margin=" 115 360 0 0"
+            Foreground="#EEEEEE"
+            Background="Transparent"
+            BorderThickness="0"
+            VerticalContentAlignment="Center"
+            FontSize="20px"
+            Style="{StaticResource FontEbat}"
+            MaxLength="59"
+            >
+        </TextBox>
+
+        <Button
+            Height="40"
+            Width="100"
+            Margin="650 360 0 0"
+            Background="Transparent"
+            Content="Отправить"
+            Foreground="#EEEEEE"
+            BorderThickness="0"
+            FontSize="18"
+            Style="{StaticResource FontEbat}" Click="Button_Click"
+            >
+        </Button>
+
+        <Button
+            Height="40"
+            Width="200"
+            Margin="0 360 550 0"
+            Background="Transparent"
+            Content="Выйти на хуй"
+            Foreground="#EEEEEE"
+            BorderThickness="0"
+            FontSize="25"
+            Style="{StaticResource FontEbat}" 
+            Click="Exit_Click"
+            >
+        </Button>
+    </Grid>
+</Window>

@@ -1,0 +1,5 @@
+C:\Users\root\Desktop\оролролрло\full_chat.exe
+C:\Users\root\Desktop\оролролрло\full_chat.dll
+C:\Users\root\Desktop\оролролрло\full_chat.deps.json
+C:\Users\root\Desktop\оролролрло\full_chat.runtimeconfig.json
+C:\Users\root\Desktop\оролролрло\full_chat.pdb
