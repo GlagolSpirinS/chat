@@ -39,6 +39,12 @@ namespace full_chat
                 await server.ReceiveAsync(bytes, SocketFlags.None);
                 string message = Encoding.UTF8.GetString(bytes);
 
+                if (message.Contains(" подключился"))
+                {
+                    string[] strings = message.Split(' ');
+                    user_list.Items.Add(strings[0]);
+                }
+
                 chat.Items.Add(message);
             }
         }
@@ -57,6 +63,15 @@ namespace full_chat
         {
             byte[] bytes = Encoding.UTF8.GetBytes(message);
             await server.SendAsync(bytes, SocketFlags.None);
+            
+            if(message.Contains("/disconet"))
+            {
+                MainWindow MainWindow = new MainWindow();
+
+                MainWindow.Show();
+
+                this.Close();
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

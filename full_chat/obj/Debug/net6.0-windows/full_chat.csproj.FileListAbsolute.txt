@@ -20,3 +20,7 @@ C:\Users\root\Desktop\pioner\full_chat\full_chat\obj\Debug\net6.0-windows\full_c
 C:\Users\root\Desktop\pioner\full_chat\full_chat\obj\Debug\net6.0-windows\full_chat.genruntimeconfig.cache
 C:\Users\root\Desktop\pioner\full_chat\full_chat\obj\Debug\net6.0-windows\ref\full_chat.dll
 C:\Users\root\Desktop\pioner\full_chat\full_chat\obj\Debug\net6.0-windows\App.baml
+C:\Users\root\Desktop\pioner\full_chat\full_chat\obj\Debug\net6.0-windows\serverMenu.g.cs
+C:\Users\root\Desktop\pioner\full_chat\full_chat\obj\Debug\net6.0-windows\userMenu.g.cs
+C:\Users\root\Desktop\pioner\full_chat\full_chat\obj\Debug\net6.0-windows\serverMenu.baml
+C:\Users\root\Desktop\pioner\full_chat\full_chat\obj\Debug\net6.0-windows\userMenu.baml

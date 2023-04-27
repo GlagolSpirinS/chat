@@ -67,7 +67,7 @@
         </ListBox>
 
         <ListBox
-            x:Name="users"
+            x:Name="user_list"
             Height="350"
             Width="200"
             Foreground="#EEEEEE"

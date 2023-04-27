@@ -50,6 +50,11 @@ namespace full_chat
                 byte[] bytes = new byte[1024];
                 await client.ReceiveAsync(bytes, SocketFlags.None);
                 string message = Encoding.UTF8.GetString(bytes);
+                if (message.Contains(" подключился"))
+                {
+                    string[] strings = message.Split(' ');
+                    user_list.Items.Add(strings[0]);
+                }
 
                 chat.Items.Add(message);
 
@@ -68,7 +73,7 @@ namespace full_chat
 
             this.Close();
         }
-        
+
         private async Task SendMessage(Socket client, string message)
         {
             byte[] bytes = Encoding.UTF8.GetBytes(message);
