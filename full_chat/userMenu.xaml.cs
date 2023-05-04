@@ -31,6 +31,18 @@ namespace full_chat
 
         }
 
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow MainWindow = new MainWindow();
+
+            SendMessage(MainWindow.nameTexBox + " отключился");
+
+            MainWindow.Show();
+
+            this.Close();
+
+        }
+
         private async Task RecieveMessage()
         {
             while (true)
@@ -44,20 +56,17 @@ namespace full_chat
                     string[] strings = message.Split(' ');
                     user_list.Items.Add(strings[0]);
                 }
+                if (message.Contains(" отключился"))
+                {
+                    string[] strings = message.Split(' ');
+                    user_list.Items.Remove(strings[0]);
+                }
 
                 chat.Items.Add(message);
             }
         }
 
-        private void Exit_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow MainWindow = new MainWindow();
 
-            MainWindow.Show();
-
-            this.Close();
-
-        }
 
         private async Task SendMessage(string message)
         {

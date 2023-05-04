@@ -6,19 +6,19 @@
         xmlns:controls="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
         xmlns:local="clr-namespace:full_chat"
         mc:Ignorable="d"
+        FontFamily="{StaticResource Default}"
         Title="MainWindow" Height="500" Width="300" Background="#222831">
     <Grid>
 
 
         <TextBlock 
+            
             Text="Введит ваше имя тварь"
             Height="20"
             Width="203"
             Margin="0 0 0 414 "
             Foreground="White"
             FontSize="18px"
-            FontFamily="/Fonts/#Roboto"
-            Style="{StaticResource FontEbat}"
             />
 
         <Border
@@ -40,8 +40,6 @@
             VerticalContentAlignment="Center"
             Foreground="#EEEEEE"
             FontSize="25px"
-            FontFamily="/Fonts/#Roboto"
-            Style="{StaticResource FontEbat}"
             MaxLength="20" TextChanged="jopa_TextChanged">
         </TextBox>
 
@@ -52,8 +50,6 @@
             Margin="0 0 0 265 "
             Foreground="White"
             FontSize="18px"
-            FontFamily="/Fonts/#Roboto"
-            Style="{StaticResource FontEbat}"
             />
 
         <Border
@@ -75,8 +71,6 @@
             VerticalContentAlignment="Center"
             Foreground="#EEEEEE"
             FontSize="25px"
-            FontFamily="/Fonts/#Roboto"
-            Style="{StaticResource FontEbat}"
             MaxLength="20" TextChanged="ip_TextChanged">
         </TextBox>
 
@@ -100,7 +94,6 @@
             FontSize="20px"
             BorderThickness="0"
             Foreground="#EEEEEE"
-            Style="{StaticResource FontEbat}"
             Click="open_server_menu"
         />
 
@@ -124,7 +117,7 @@
             VerticalContentAlignment="Center"
             FontSize="20px"
             Foreground="#EEEEEE"
-            Style="{StaticResource FontEbat}" 
+             
             Click="open_user_menu"
         />
 

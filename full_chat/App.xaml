@@ -5,10 +5,6 @@
              xmlns:controls="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <Style x:Key="FontEbat">
-            <Setter Property="TextElement.FontFamily"
-              Value="/Fonts/#Roboto">
-            </Setter>
-        </Style>
+        <FontFamily x:Key="Default">/Fonts/#Roboto</FontFamily>
     </Application.Resources>
 </Application>

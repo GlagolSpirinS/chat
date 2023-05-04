@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:full_chat"
         mc:Ignorable="d"
+        FontFamily="{StaticResource Default}"
         Title="serverMenu" Height="450" Width="800">
     <Grid Background="#222831">
 
@@ -28,7 +29,6 @@
             BorderThickness="0"
             Background="Transparent"
             FontSize="20px"
-            Style="{StaticResource FontEbat}"
             >
         </ListBox>
 
@@ -51,7 +51,7 @@
             BorderThickness="0"
             Background="Transparent"
             FontSize="20px"
-            Style="{StaticResource FontEbat}"
+            
             >
         </ListBox>
 
@@ -74,7 +74,7 @@
             BorderThickness="0"
             VerticalContentAlignment="Center"
             FontSize="20px"
-            Style="{StaticResource FontEbat}"
+            
             MaxLength="59"
             >
         </TextBox>
@@ -97,7 +97,7 @@
             Foreground="#EEEEEE"
             BorderThickness="0"
             FontSize="25"
-            Style="{StaticResource FontEbat}" 
+             
             Click="Exit_Click"
             >
         </Button>
@@ -120,7 +120,7 @@
             Foreground="#EEEEEE"
             BorderThickness="0"
             FontSize="18"
-            Style="{StaticResource FontEbat}" Click="Button_Click"
+             Click="Button_Click"
             >
         </Button>
 

@@ -24,3 +24,5 @@ C:\Users\root\Desktop\pioner\full_chat\full_chat\obj\Debug\net6.0-windows\server
 C:\Users\root\Desktop\pioner\full_chat\full_chat\obj\Debug\net6.0-windows\userMenu.g.cs
 C:\Users\root\Desktop\pioner\full_chat\full_chat\obj\Debug\net6.0-windows\serverMenu.baml
 C:\Users\root\Desktop\pioner\full_chat\full_chat\obj\Debug\net6.0-windows\userMenu.baml
+C:\Users\root\Desktop\pioner\full_chat\full_chat\bin\Debug\net6.0-windows\Fonts\Roboto-Bold.ttf
+C:\Users\root\Desktop\pioner\full_chat\full_chat\obj\Debug\net6.0-windows\full_chat_Content.g.cs
